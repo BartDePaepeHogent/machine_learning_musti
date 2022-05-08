@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<link href="../static/style.css" rel="stylesheet" type="text/css">
-<title>Typical Climate</title>
+    <meta charset="UTF-8">
+    <link href="../assets/main.css" rel="stylesheet" type="text/css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cormorant:ital,wght@1,500&display=swap');
+    </style>
+    <title>Musti App</title>
 </head>
+
 <body>
-    <div id="element1">
-        <img src="{{ url_for('static', filename= image_name ) }}" alt="Image">
+    <h1>Waar werd Musti het laatst gezien?</h1>
+    <div id="foto">
+        <img src="{{ url_for('static', filename= image_name ) }}" alt="hier is Musti">
     </div>
-    <div id="element2">
+    <div id="waarden">
         <p>{{ classification_name }}</p>
         <p>{{ classification_result }}</p>
     </div>
+
+    <div id="eind">
+        <form method="post" action="/">
+            <input type="submit" value="Hertrainen" name="hertrain" />
+        </form>
+    </div>
 </body>
+
 </html>

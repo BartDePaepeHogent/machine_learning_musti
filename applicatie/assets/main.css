@@ -1,0 +1,32 @@
+body {
+  background-color: ivory;
+  padding: 5px;
+  font-family: 'Bangers', cursive;
+}
+
+h1 {
+  color: white;
+  background-image: linear-gradient(to right, white, black, black, white);
+  text-align: center;
+  font-family: 'Cormorant', serif;
+}
+
+p {
+  border: black, 5px;
+  border-style: double;
+  word-spacing: 2px;
+  border-radius: 5px;
+}
+
+form {
+  text-align: center;
+}
+
+#foto {
+  text-align: center;
+}
+
+#eind {
+  background-color: black;
+  border-radius: 5px;
+}
